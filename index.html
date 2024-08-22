@@ -55,20 +55,20 @@
 
     <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
+        <div class="sparsegs_teaser">
           <!-- <div class="two" id='sparsegs_img'><video  width=100% muted autoplay loop>
           <source src="images/SparseGS_teaser.jpg">
           </video></div> -->
           <img src='images/SparseGS_teaser.jpg' width=100%>
-          <img src='images/SparseGS_thumbnail.png' width=100%>
         </div>
+        <img src='images/SparseGS_thumbnail.png' width=100%>
         <script type="text/javascript">
           function sparsegs_start() {
-            document.getElementById('sparsegs_img').style.opacity = "1";
+            document.getElementById('sparsegs_teaser').style.opacity = "1";
           }
 
           function sparsegs_stop() {
-            document.getElementById('sparsegs_img').style.opacity = "0";
+            document.getElementById('sparsegs_teaser').style.opacity = "0";
           }
           sparsegs_stop()
         </script>
