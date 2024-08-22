@@ -53,24 +53,24 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+    <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-          <source src="images/nuvo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/nuvo.jpg' width=100%>
+          <!-- <div class="two" id='sparsegs_img'><video  width=100% muted autoplay loop>
+          <source src="images/SparseGS_teaser.jpg">
+          </video></div> -->
+          <img src='images/SparseGS_teaser.jpg' width=100%>
+          <img src='images/SparseGS_thumbnail.png' width=100%>
         </div>
         <script type="text/javascript">
-          function nuvo_start() {
-            document.getElementById('nuvo_image').style.opacity = "1";
+          function sparsegs_start() {
+            document.getElementById('sparsegs_img').style.opacity = "1";
           }
 
-          function nuvo_stop() {
-            document.getElementById('nuvo_image').style.opacity = "0";
+          function sparsegs_stop() {
+            document.getElementById('sparsegs_img').style.opacity = "0";
           }
-          nuvo_stop()
+          sparsegs_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
