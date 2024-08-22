@@ -55,22 +55,23 @@
 
     <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="sparsegs_teaser">
-          <!-- <div class="two" id='sparsegs_img'><video  width=100% muted autoplay loop>
-          <source src="images/SparseGS_teaser.jpg">
-          </video></div> -->
-          <img src='images/SparseGS_teaser.jpg' width=100%>
+        <div class="sparsegs_teaser" id="sparsegs_container">
+          <img src='images/SparseGS_teaser.jpg' id='sparsegs_teaser' style="width:100%; display:none;">
+          <img src='images/SparseGS_thumbnail.png' id='sparsegs_thumbnail' style="width:100%;">
         </div>
-        <img src='images/SparseGS_thumbnail.png' width=100%>
         <script type="text/javascript">
           function sparsegs_start() {
-            document.getElementById('sparsegs_teaser').style.opacity = "1";
+            document.getElementById('sparsegs_teaser').style.display = "block";
+            document.getElementById('sparsegs_thumbnail').style.display = "none";
           }
-
+    
           function sparsegs_stop() {
-            document.getElementById('sparsegs_teaser').style.opacity = "0";
+            document.getElementById('sparsegs_teaser').style.display = "none";
+            document.getElementById('sparsegs_thumbnail').style.display = "block";
           }
-          sparsegs_stop()
+    
+          // Initial state: show thumbnail, hide teaser
+          sparsegs_stop();
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
