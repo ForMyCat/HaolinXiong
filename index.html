@@ -53,49 +53,41 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle; position: relative;">
-                <div class="sparsegs_teaser" id="sparsegs_container" style="position: relative; width: 100%;">
-                  <!-- Thumbnail image -->
-                  <img src='images/SparseGS_thumbnail.png' id='sparsegs_thumbnail' style="width:100%; cursor: pointer;">
-                  
-                  <!-- Teaser image, hidden by default -->
-                  <img src='images/SparseGS_teaser.jpg' id='sparsegs_teaser' style="width:100%; position: absolute; top: 0; left: 0; display: none;">
-                </div>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle; position: relative;">
-                <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">
-                  <span class="papertitle">SparseGS: Sparse View Synthesis with 3D Gaussian Splatting</span>
-                </a>
-                <br>
-                <strong>Haolin Xiong*</strong>,
-                <a href="https://www.linkedin.com/in/sairisheek/">Sairisheek Muttukuru*</a>,
-                <a href="https://corneliushsiao.github.io/">Hanyuan Xiao</a>,
-                <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>,
-                <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>,
-                <a href="https://www.ee.ucla.edu/achuta-kadambi">Achuta Kadambi</a>
-                <br>
-                <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2312.00206">arXiv</a>
-                <p></p>
-                <p>
-                  Real-world scene reconstruction using 3D Gaussian Splatting with 12 input views.
-                </p>
-              </td>
-            </tr>
-            
-            <script type="text/javascript">
-              // Show teaser image on hover
-              document.getElementById('sparsegs_thumbnail').addEventListener('mouseover', function() {
-                document.getElementById('sparsegs_teaser').style.display = 'block';
-              });
-            
-              // Hide teaser image when not hovering
-              document.getElementById('sparsegs_thumbnail').addEventListener('mouseout', function() {
-                document.getElementById('sparsegs_teaser').style.display = 'none';
-              });
-            </script>
+<tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()" style="position: relative;">
+  <td style="padding:20px;width:25%;vertical-align:middle; position: relative;">
+    <div class="sparsegs_teaser" id="sparsegs_container" style="position: relative; width: 100%;">
+      <img src='images/SparseGS_thumbnail.png' id='sparsegs_thumbnail' style="width:100%;">
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle; position: relative;">
+    <!-- Teaser image, positioned absolutely to cover text -->
+    <div id="sparsegs_teaser" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; z-index: 999;">
+      <img src='images/SparseGS_teaser.jpg' style="width:100%; height: auto;">
+    </div>
+
+    <!-- The text content that will be overlapped -->
+    <div id="text_content" style="position: relative; z-index: 1;">
+      <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">
+        <span class="papertitle">SparseGS: Sparse View Synthesis with 3D Gaussian Splatting</span>
+      </a>
+      <br>
+      <strong>Haolin Xiong*</strong>,
+      <a href="https://www.linkedin.com/in/sairisheek/">Sairisheek Muttukuru*</a>,
+      <a href="https://corneliushsiao.github.io/">Hanyuan Xiao</a>,
+      <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>,
+      <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>,
+      <a href="https://www.ee.ucla.edu/achuta-kadambi">Achuta Kadambi</a>
+      <br>
+      <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">project page</a>
+      /
+      <a href="https://arxiv.org/abs/2312.00206">arXiv</a>
+      <p></p>
+      <p>
+        Real-world scene reconstruction using 3D Gaussian Splatting with 12 input views.
+      </p>
+    </div>
+  </td>
+</tr>
 
   </body>
 </html>
