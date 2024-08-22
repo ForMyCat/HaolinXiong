@@ -53,7 +53,7 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
+    <!-- <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="sparsegs_teaser" id="sparsegs_container">
           <img src='images/SparseGS_teaser.jpg' id='sparsegs_teaser' style="width:200%;display:none;z-index: 999;">
@@ -83,8 +83,8 @@
         <strong>Haolin Xiong*</strong>,
         <a href="https://www.linkedin.com/in/sairisheek/">Sairisheek Muttukuru*</a>,
         <a href="https://corneliushsiao.github.io/">Hanyuan Xiao</a>,
-        <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>
-        <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>
+        <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>,
+        <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>,
         <a href="https://www.ee.ucla.edu/achuta-kadambi">Achuta Kadambi</a>
         <br>
         <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">project page</a>
@@ -94,6 +94,62 @@
         <p>
         Real-world scene reconstruction using 3D Gaussian Splatting with 12 input views.
         </p>
-      </td>
+      </td> -->
+
+
+      <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='sparsegs_teaser'>
+              <img src='images/SparseGS_teaser.jpg' width=200%>
+            </video></div>
+            <img src='SparseGS_thumbnail.png' width=100%>
+          </div>
+          <script type="text/javascript">
+            function sparsegs_start() {
+              document.getElementById('sparsegs_teaser').style.opacity = "1";
+            }
+  
+            function sparsegs_stop() {
+              document.getElementById('sparsegs_teaser').style.opacity = "0";
+            }
+            sparsegs_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle;">
+          <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">
+            <span class="papertitle">SparseGS: Sparse View Synthesis with 3D Gaussian Splatting</span>
+          </a>
+          <br>
+          <strong>Haolin Xiong*</strong>,
+          <a href="https://www.linkedin.com/in/sairisheek/">Sairisheek Muttukuru*</a>,
+          <a href="https://corneliushsiao.github.io/">Hanyuan Xiao</a>,
+          <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>,
+          <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>,
+          <a href="https://www.ee.ucla.edu/achuta-kadambi">Achuta Kadambi</a>
+          <br>
+          <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">project page</a>
+          /
+          <a href="https://arxiv.org/abs/2312.00206">arXiv</a>
+          <p></p>
+          <p>
+          Real-world scene reconstruction using 3D Gaussian Splatting with 12 input views.
+          </p>
+        </td>
+      </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
