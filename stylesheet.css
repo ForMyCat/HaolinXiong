@@ -98,8 +98,10 @@ h2 {
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
+  margin-bottom: 0px;
+  /* padding-bottom: 8px; */
 }
 
 .name {
@@ -110,8 +112,8 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  /* width: 160px;
+  height: 160px; */
   position: relative;
 }
 
@@ -132,4 +134,25 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+.teaser {
+  display: none;
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+}
+
+#sparsegs_teaser {
+  max-height: 300px;
+  width: calc(90vw);
+  max-width: 800px;
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+}
+
+.one:hover .teaser {
+  opacity: 1;
+  display: block;
 }
