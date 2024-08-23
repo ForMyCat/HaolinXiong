@@ -139,17 +139,24 @@ span.highlight {
 .teaser {
   display: none;
   position: absolute;
-  bottom:0px;
   left: 0px;
 }
 
 #sparsegs_teaser {
-  max-height: 300px;
+  max-height: 500px;
   width: calc(90vw);
   max-width: 800px;
   position: absolute;
   bottom:0px;
-  left: 0px;
+}
+
+#GSLE_teaser {
+  max-height: 500px;
+  width: calc(100vw);
+  max-width: 800px;
+  position: absolute;
+  vertical-align: middle;
+  bottom:0px;
 }
 
 .one:hover .teaser {
