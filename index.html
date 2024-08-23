@@ -45,69 +45,25 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research interest lies broadly in 3D Computer Vision (e.g. depth sensing, scene reconstruction, generatie AI, etc), recently focuses on 3D Gaussian Splatting.
+                  My research interest lies broadly in 3D Computer Vision (e.g. depth sensing, scene reconstruction, generative AI, etc), recently focuses on 3D Gaussian Splatting.
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-    <!-- <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="sparsegs_teaser" id="sparsegs_container">
-          <img src='images/SparseGS_teaser.jpg' id='sparsegs_teaser' style="width:200%;display:none;z-index: 999;">
-          <img src='images/SparseGS_thumbnail.png' id='sparsegs_thumbnail' style="width:100%;">
-        </div>
-        <script type="text/javascript">
-          function sparsegs_start() {
-            document.getElementById('sparsegs_teaser').style.display = "block";
-            document.getElementById('sparsegs_thumbnail').style.display = "none";
-          }
-    
-          function sparsegs_stop() {
-            document.getElementById('sparsegs_teaser').style.display = "none";
-            document.getElementById('sparsegs_thumbnail').style.display = "block";
-          }
-    
-          // Initial state: show thumbnail, hide teaser
-          sparsegs_stop();
-        </script>
-      </td>
-    </tr>
-      <td style="padding:20px;width:75%;vertical-align:middle;z-index: 1;">
-        <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">
-          <span class="papertitle">SparseGS: Sparse View Synthesis with 3D Gaussian Splatting</span>
-        </a>
-        <br>
-        <strong>Haolin Xiong*</strong>,
-        <a href="https://www.linkedin.com/in/sairisheek/">Sairisheek Muttukuru*</a>,
-        <a href="https://corneliushsiao.github.io/">Hanyuan Xiao</a>,
-        <a href="https://web.cs.ucla.edu/~rishiu">Rishi Upadhyay</a>,
-        <a href="https://pradyumnachari.github.io">Pradyumna Chari</a>,
-        <a href="https://www.ee.ucla.edu/achuta-kadambi">Achuta Kadambi</a>
-        <br>
-        <a href="https://formycat.github.io/SparseGS-Real-Time-360-Sparse-View-Synthesis-using-Gaussian-Splatting/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2312.00206">arXiv</a>
-        <p></p>
-        <p>
-        Real-world scene reconstruction using 3D Gaussian Splatting with 12 input views.
-        </p>
-      </td> -->
-
-
-      <tr onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
+      <tr>
         <td style="padding:20px;width:25%;vertical-align:middle" >
           <div class="one">
             <div class="two" id='sparsegs_teaser'>
               <img src='images/SparseGS_teaser.jpg' width=100%>
             </video></div>
-            <img src='images/SparseGS_thumbnail.png' width=100% >
+            <img src='images/SparseGS_thumbnail.png' id="sparsegs_thumbnail" width=100% onmouseout="sparsegs_stop()" onmouseover="sparsegs_start()">
           </div>
           <script type="text/javascript">
             function sparsegs_start() {
               document.getElementById('sparsegs_teaser').style.opacity = "1";
+              document.getElementById('sparsegs_teaser').style.width = "800px";
             }
   
             function sparsegs_stop() {
@@ -137,19 +93,6 @@
           </p>
         </td>
       </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </body>
 </html>
