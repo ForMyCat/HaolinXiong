@@ -144,16 +144,18 @@ span.highlight {
 
 #sparsegs_teaser {
   max-height: 500px;
+  height:100%;
   width: calc(90vw);
-  max-width: 800px;
+  max-width: 1000px;
   position: absolute;
   bottom:0px;
 }
 
 #GSLE_teaser {
   max-height: 500px;
+  height:100%;
   width: calc(100vw);
-  max-width: 800px;
+  max-width: 1000px;
   position: absolute;
   vertical-align: middle;
   bottom:0px;
