@@ -145,7 +145,7 @@ span.highlight {
 #sparsegs_teaser {
   max-height: 500px;
   height:100%;
-  width: calc(90vw);
+  width: auto;
   max-width: 1000px;
   position: absolute;
   bottom:0px;
@@ -154,17 +154,17 @@ span.highlight {
 #GSLE_teaser {
   max-height: 500px;
   height:100%;
-  width: calc(100vw);
+  width: auto;
   max-width: 1000px;
   position: absolute;
   vertical-align: middle;
   bottom:0px;
 }
 
-#SRVD_teaser {
+#mindtoface_teaser {
   max-height: 500px;
   height:100%;
-  width: calc(100vw);
+  width: auto;
   max-width: 1000px;
   position: absolute;
   vertical-align: middle;
