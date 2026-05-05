@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://formycat.github.io/HaolinXiong/sitemap.xml
+Sitemap: https://haolinxiong.com/sitemap.xml
